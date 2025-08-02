@@ -27,14 +27,18 @@ If you plan to deploy this project or use it in production, you **must**:
 ```python
 # Example (in settings.py or wherever it's used)
 MERCHANT = 'your-merchant-code-here'
-
+```
 
 
 ## 🚀 Getting Started
 
 Clone the repository and install the dependencies:
-
 ```bash
 git clone https://github.com/ArianGhaderi99/Django-OnlineShope-With-Pyment-gateway.git
 cd Django-OnlineShope-With-Pyment-gateway
 pip install -r requirements.txt
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
